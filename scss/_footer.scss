@@ -1,0 +1,9 @@
+footer {
+    background: $nav-color;
+    padding: 100px 15px;
+    .social-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
