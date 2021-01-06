@@ -4,6 +4,31 @@ footer {
     .social-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
+        a{
+            font-size: 3rem;
+            color: $background-color;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            padding: 10px;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+    }
+    h5 {
+        font-size: 1.2rem;  
+        text-transform: uppercase;   
+        text-align: center;
+        margin: 15px 0;  
+    }
+    h6 {
+        font-size: 1rem;  
+        text-transform: capitalize; 
+        text-align: center; 
 
     }
 }
