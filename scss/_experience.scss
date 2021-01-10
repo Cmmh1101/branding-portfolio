@@ -1,0 +1,154 @@
+#experience-page {
+    //padding: 150px 15px;
+    .container {
+        padding: 150px 0;
+        .large-title {
+            color: $main-titles-color;
+            font-weight: 900;
+            font-size: 4.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            left: -55px;
+        }
+        .experience-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            .large-icons {
+                .red-squares {
+                    display: inline-block;
+                    border: 30px solid $subtitles-color;
+                    padding: 5px;
+                    position: relative;
+                    top: -100px;
+                    .red-box{
+                        background: $subtitles-color;
+                        width: 150px;
+                        height: 150px;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        letter-spacing: 3px;
+                    }
+                }
+                .blue-circle {
+                    display: inline-block;
+                    border: 30px solid $circle-color;
+                    padding: 10px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 130px;
+                    left: 50px;
+                    
+                    .blue-box{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        color: $circle-color;
+                        width: 150px;
+                        height: 150px;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                    }
+                }
+                .yellow-triangle {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 150px 230px 150px;
+                    border-color: transparent transparent rgb(247, 204, 16) transparent;
+                    position: relative;
+                    top: 75px;
+                    left: -25px;
+                    //transform: rotate(20deg);
+                    .yellow-box{
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 93.75px 151.75px 93.75px;
+                        border-color: transparent transparent $background-color transparent;
+                        position: absolute;
+                        left: -94px;
+                        top: 49px;
+                        font-size: 1.1rem;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: rgb(247, 204, 16);
+                        .text {
+                            position: relative;
+                            top: 98px;
+                            left: -45px;
+                            //transform: rotate(-20deg);
+                        }
+                    }
+                }
+            }
+            .info {
+                padding: 80px 0 0;
+                //margin: 5px;
+                .info-box{
+                    margin: 10px 0;
+                    padding-top: 20px;
+                    .highlight-title {
+                        font-size: 1.5rem;
+                        color: $squares-color;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        margin: 20px 0;
+                    }
+                    .far{
+                        font-size: 2rem;
+                        color: $squares-color;
+                        padding: 5px 5px 5px 0;
+                    }
+                    span.highlight{
+                        color: $nav-color;
+                        font-size: 1.3rem;
+                    }
+                    h3 {
+                        font-size: 1.5rem;
+                        color: $circle-color;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        margin: 20px 0;
+                    }
+                    .awards-title{
+                        font-size: 1.5rem;
+                        color: $triangle-color;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        margin: 20px 0;
+                    }
+                    span.date{
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: rgb(74, 120, 172);
+                        text-transform: capitalize;
+                        letter-spacing: 3px;   
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        color: $nav-color;
+                        font-weight: 400;
+                        margin-top: 15px;
+                        line-height: 1.8;
+                    }
+
+                }
+            }
+        }
+    }
+}
+    
