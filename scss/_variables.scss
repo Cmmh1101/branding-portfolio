@@ -1,6 +1,7 @@
 $nav-color: #283747;
 $background-color: #f3f3f3;
-$main-titles-color: #3c1874;
+//$main-titles-color: #3c1874;
+$main-titles-color: #3343FF;
 $subtitles-color: #de354c;
 $accent-color: #de354c;
 $text-color: #383B42;
@@ -10,3 +11,43 @@ $circle-color: #244fb4;
 $triangle-color: rgb(247, 204, 16);
 $squares-color: #de354c;
 
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 575.98px;
+
+// Small tablets (portrait view)
+$screen-md-min: 767.99px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
