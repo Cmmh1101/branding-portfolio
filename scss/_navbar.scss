@@ -1,0 +1,119 @@
+header {
+    .nav-main{
+        background: $background-color;
+        padding: 20px 0;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        right: 0;
+        .logo {
+            a {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $main-titles-color;
+            background: $circle-color;
+            padding: 20px 20px;
+            }
+        }
+        ul{
+            display: flex;
+                li {
+                    padding: 10px;
+                    font-size: 1rem;
+                    padding: 2px;
+                    text-decoration: none;
+                    color: $nav-color;
+                    a {
+                        padding: 15px;
+                        color: $nav-color;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: $main-titles-color;
+                            border-bottom: 2px solid $main-titles-color;
+                            font-weight: 700;
+                        }
+                    }
+                    @include for_breakpoint (mobile) {
+                        padding: 25px 5px;
+                        border-bottom: $background-color;
+                        font-size: 1.2rem;
+                    }
+                    @include for_breakpoint (tablet) {
+                        padding: 20px;
+                        border-bottom: $background-color;
+                        font-size: 2rem;
+                    }
+                }
+
+            }
+            @include for_breakpoint (mobile tablet) {
+                display: block;
+            }
+            .nav-menu {
+                @include for_breakpoint (mobile tablet) {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $nav-color;
+                    height: 100%;
+                    width: 50%;
+                    padding: 2px;
+                    //opacity: .9;
+                    z-index: 5;
+                    transform: translateX(-200%);
+                    //transition: transform .4s ease-in-out;
+                    -webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+                }
+                li{
+                    @include for_breakpoint (mobile tablet) {
+                        //padding: 30px;
+                        border-bottom: 1px solid $background-color;
+                        text-align: center;
+                    }
+                }
+                a {
+                    @include for_breakpoint (mobile tablet) {
+                        color: $background-color;
+                        &:hover {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            .active {
+                @include for_breakpoint (mobile tablet) {
+                        transform: translateX(0);
+                }
+                }
+        }
+    }
+
+    .menu-btn {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 40px;
+        z-index: 2;
+        font-size: 2rem;
+        color: $main-titles-color;
+        display: none;
+        @include for_breakpoint (mobile tablet) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    hr {
+        color: orange;
+        height: 4px;
+        border: none;
+    }
+
+
+
+    

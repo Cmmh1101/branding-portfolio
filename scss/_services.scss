@@ -1,0 +1,117 @@
+#services-area {
+    padding: 0 15px;
+    margin-bottom: 10rem;
+    .container {
+        .title {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            .circle {
+                background: $accent-color;
+                opacity: .2;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 0;
+                
+                }
+            h1{
+            position: relative;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $main-titles-color;
+            z-index: 1;
+            letter-spacing: 4px;
+            }
+        }
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        @include for_breakpoint (mobile) {
+            grid-template-columns: 100%;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0);
+            transition: all 0.4s ease-in-out;
+            padding: 40px;
+            &:hover {
+                background: rgba(255, 255, 255, 1);
+                -webkit-box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                -moz-box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                cursor: pointer;
+            }
+            @include for_breakpoint (mobile) {
+                    background: rgba(255, 255, 255, 1);
+                    -webkit-box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                    -moz-box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                    box-shadow: 0px 0px 43px -8px rgba(0,0,0,0.52);
+                    cursor: pointer;
+            }
+            .fas {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            .far {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+            h5 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $subtitles-color;
+                letter-spacing: 2px;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                color: $nav-color;
+                //opacity: .6;
+                line-height: 1.5;
+            }
+        }
+        .yellow {
+            border-bottom: 3px solid $triangle-color;
+        }
+        .blue {
+            border-bottom: 3px solid $circle-color;
+        }
+        .red {
+            border-bottom: 3px solid $squares-color;
+        }
+
+
+
+    }
+    .btn-contact {
+        margin-top: 6rem;
+        position: relative;
+        text-align: center;
+        //margin-right: 15rem;
+        a{
+            color: $accent-color;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 10px 0;
+            margin: 100px 0;
+            letter-spacing: 2px;
+            text-transform:uppercase;
+            transition: all .3s ease-in-out;
+            &:hover {
+                font-size: 1.5rem; 
+                border-bottom: 3px solid $accent-color;
+            }
+        }
+    }
+}
+

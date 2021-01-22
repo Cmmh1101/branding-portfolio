@@ -2,6 +2,9 @@
     //padding: 150px 15px;
     .container {
         padding: 150px 0;
+        /*@include for_breakpoint (mobile) {
+            margin-left: 10px;
+        }*/
         .large-title {
             color: $main-titles-color;
             font-weight: 900;
@@ -10,18 +13,40 @@
             text-transform: uppercase;
             position: relative;
             left: -55px;
+            @include for_breakpoint (mobile) {
+                font-weight: 900;
+                font-size: 3rem;
+                left: 0;
+            }
         }
         .experience-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
+            @include for_breakpoint (mobile) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                margin-left: 20px;
+            }
             .large-icons {
+                @include for_breakpoint (tablet) {
+                    position: relative;
+                    top: -28px;
+                }
+                @include for_breakpoint (mobile) {
+                    display: none;
+                }
                 .red-squares {
                     display: inline-block;
                     border: 30px solid $subtitles-color;
                     padding: 5px;
                     position: relative;
                     top: -100px;
+                    @include for_breakpoint (mobile tablet) {
+                        top: 160px;
+                        left: 5px;  
+                    } 
                     .red-box{
                         background: $subtitles-color;
                         width: 150px;
@@ -36,6 +61,7 @@
                         font-size: 1.1rem;
                         letter-spacing: 3px;
                     }
+
                 }
                 .blue-circle {
                     display: inline-block;
@@ -45,7 +71,6 @@
                     position: relative;
                     top: 130px;
                     left: 50px;
-                    
                     .blue-box{
                         display: flex;
                         justify-content: center;
@@ -70,6 +95,9 @@
                     top: 75px;
                     left: -25px;
                     //transform: rotate(20deg);
+                    @include for_breakpoint (mobile tablet) {
+                        left: -25px;   
+                    }
                     .yellow-box{
                         width: 0;
                         height: 0;
@@ -90,6 +118,12 @@
                             //transform: rotate(-20deg);
                         }
                     }
+                    @include for_breakpoint (mobile) {
+                        left: 25px;
+                    }
+                    @include for_breakpoint (tablet) {
+                        left: 60px;
+                    }
                 }
             }
             .info {
@@ -101,10 +135,14 @@
                     .highlight-title {
                         font-size: 1.5rem;
                         color: $squares-color;
+                        font-family: 'Noto Sans', sans-serif;
                         font-weight: 900;
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
                         margin: 20px 0;
+                        @include for_breakpoint (mobile) {
+                            font-size: 1.2rem;
+                        }
                     }
                     .far{
                         font-size: 2rem;
@@ -122,14 +160,21 @@
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
                         margin: 20px 0;
+                        @include for_breakpoint (mobile) {
+                            font-size: 1.1rem;
+                        }
                     }
                     .awards-title{
                         font-size: 1.5rem;
                         color: $triangle-color;
+                        font-family: 'Noto Sans', sans-serif;
                         font-weight: 900;
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
                         margin: 20px 0;
+                        @include for_breakpoint (mobile) {
+                            font-size: 1.2rem;
+                        }
                     }
                     span.date{
                         font-size: 1.1rem;
@@ -151,13 +196,3 @@
         }
     }
 }
-@media only screen and (max-width: 960){
-    
-}
-
-/* Phones */ 
-
-@media only screen and (max-width: 767px){
-    
-}
-    
