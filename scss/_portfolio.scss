@@ -33,7 +33,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 150px 150px 150px 150px 150px;
-        grid-gap: 10px;
+        grid-gap: 15px;
         background: $nav-color;
         border: 15px solid $nav-color;
         margin: 50px 0 100px 0;
@@ -72,12 +72,12 @@
                 background: $background-color;
                 border-radius: 5px;
                 padding: 10px 20px;
-                transform: translate3d(0, 400px, 0);
-                transition: all .4s ease-in-out;
+                visibility: hidden;
+                transition: all .3s ease-in-out;
                 opacity: 0;
                 } 
             &:hover .image .hover-bg .title .text{
-                //background: $nav-color;
+                visibility: visible;
                 border-radius: 5px;
                 padding: 10px 20px;
                 transform: translate3d(0, 0, 0);
