@@ -1,20 +1,19 @@
 header {
     .nav-main{
-        background: $background-color;
+        background: $nav-color;
         padding: 20px 0;
         display:flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 150px;
         right: 0;
         .logo {
             a {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $main-titles-color;
-            background: $circle-color;
-            padding: 20px 20px;
+                img {
+                    width: 200px;
+                    height: 100%;
+                    margin: 15px;
+                }
             }
         }
         ul{
@@ -27,7 +26,7 @@ header {
                     color: $nav-color;
                     a {
                         padding: 15px;
-                        color: $nav-color;
+                        color: $background-color;
                         transition: all .3s ease-in-out;
                         &:hover {
                             color: $main-titles-color;
