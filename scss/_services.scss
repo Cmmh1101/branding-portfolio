@@ -1,7 +1,9 @@
 #services-area {
     padding: 0 15px;
     margin-bottom: 10rem;
+    //height: 100vh;
     .container {
+        margin-top: 10%;
         .title {
             position: relative;
             width: 200px;
@@ -12,7 +14,7 @@
             margin: 0 auto;
             margin-bottom: 5rem;
             .circle {
-                background: $accent-color;
+                background: $circle-color;
                 opacity: .2;
                 width: 150px;
                 height: 150px;
@@ -36,6 +38,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
+        margin-top: -5%;
         @include for_breakpoint (mobile) {
             grid-template-columns: 100%;
         }
@@ -60,16 +63,18 @@
             .fas {
                 font-size: 3rem;
                 margin-bottom: 2rem;
+                color: $circle-color;
             }
             .far {
                 font-size: 3rem;
                 margin-bottom: 2rem;
+                color: $circle-color;
             }
             h5 {
                 font-size: 1.2rem;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: $subtitles-color;
+                color: $main-titles-color;
                 letter-spacing: 2px;
                 margin-bottom: 2rem;
             }
@@ -99,7 +104,7 @@
         text-align: center;
         //margin-right: 15rem;
         a{
-            color: $accent-color;
+            color: $circle-color;
             font-size: 1.3rem;
             font-weight: 700;
             padding: 10px 0;
@@ -109,7 +114,7 @@
             transition: all .3s ease-in-out;
             &:hover {
                 font-size: 1.5rem; 
-                border-bottom: 3px solid $accent-color;
+                border-bottom: 3px solid $circle-color;
             }
         }
     }

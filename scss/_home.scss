@@ -10,29 +10,32 @@ body{
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 100%;
         justify-content: center;
-        padding: 80px 0;
+        //padding: 80px 0;
         width: 100%;
         height: 100vh;
         //padding-top: 100px;
-        @include for_breakpoint (mobile tablet) {
+        @include for_breakpoint (tablet) {
             padding: 0 0 80px;
-            margin-top: -30%;
+            margin-top: -10%;
+        }
+        @include for_breakpoint (mobile) {
+            display: grid;
+            grid-template-columns: 1fr;
         }
         .about-me{
             position: relative;
-            top: 120px;
             .grey-square{
                 position: absolute;
-                border: 20px solid $nav-color;
+                border: 20px solid $circle-color;
                 opacity: .2;
                 width: 800px;
                 height: 500px;
                 z-index: 0;
                 //margin-left: -480px;
-                top: -10%;
-                left: -95%;
+                top: -18%;
+                left: -100%;
                     @include for_breakpoint (mobile tablet) {
                         display: none;
                     }
@@ -40,7 +43,7 @@ body{
             h1{
                 position: relative;
                 color: $main-titles-color;
-                font-size: 5rem;
+                font-size: 4rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 //margin: 85px 0 50px 0;
@@ -71,7 +74,7 @@ body{
             }
             a{
                 position: relative;
-                color: $accent-color;
+                color: $circle-color;
                 font-size: 1.3rem;
                 font-weight: 700;
                 padding: 10px 0;
@@ -83,7 +86,7 @@ body{
                 transition: all .3s ease-in-out;
                 &:hover {
                     font-size: 1.5rem; 
-                    border-bottom: 3px solid $accent-color;
+                    border-bottom: 3px solid $circle-color;
                 }
                 @include for_breakpoint (mobile tablet) {
                     font-size: 1.1rem;
@@ -97,7 +100,7 @@ body{
 
         .img {
             position: relative;
-            top: 50px;
+            top: -120px;
             .profile-img {
                 position: relative;
                 align-items: center;
@@ -109,7 +112,8 @@ body{
                 margin-right: -20px;
                 @include for_breakpoint (mobile tablet) {
                     left: 10%;
-                    max-width: 250px
+                    max-width: 250px;
+                    margin-top: 15%;
                 }
             }
         }
