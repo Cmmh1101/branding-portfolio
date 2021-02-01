@@ -27,7 +27,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 20px;
-                margin-left: 20px;
+                margin-left: 10px;
             }
             .large-icons {
                 @include for_breakpoint (tablet) {
@@ -94,7 +94,6 @@
                     position: relative;
                     top: 75px;
                     left: -25px;
-                    //transform: rotate(20deg);
                     @include for_breakpoint (mobile tablet) {
                         left: -25px;   
                     }
@@ -149,6 +148,7 @@
                         color: $squares-color;
                         padding: 5px 5px 5px 0;
                     }
+                    
                     span.highlight{
                         color: $nav-color;
                         font-size: 1.3rem;

@@ -34,20 +34,18 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 150px 150px 150px 150px 150px;
         grid-gap: 15px;
-        //background: $nav-color;
-        //border: 15px solid $nav-color;
         margin: 50px 0 100px 0;
-        @include for_breakpoint (phone) {
+        @include for_breakpoint (mobile) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
             grid-gap: 15px;
-
+            margin: 4rem 1rem;
         }
         @include for_breakpoint (tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
             grid-gap: 15px;
-
+            margin: 4rem 1rem;
         }
         .box{
             background: $nav-color;
@@ -60,7 +58,6 @@
             text-align: center;
             text-transform: uppercase;
             overflow: hidden;
-            //border: 5px solid $nav-color;
             &:hover{
                 background: rgba(140, 38, 57,.6);
             }
@@ -87,11 +84,6 @@
                 height: 100%;
                 width: 100%;
             }
-            /*&:hover .hover-bg {
-                height: 100%;
-                weight: 100%;
-            }*/
-            
         }
 
     /* BOX LOCATIONS */
@@ -285,12 +277,12 @@
             }
             @include for_breakpoint (mobile) {
                 grid-column: 1 / 4;
-                grid-row: 7 / 8; 
+                grid-row: 6 / 7; 
                 height: 150px;
             }
             @include for_breakpoint (tablet) {
-                grid-column: 1 / 3;
-                grid-row: 7 / 9; 
+                grid-column: 2 / 3;
+                grid-row: 5 / 7; 
             }
         }
         

@@ -10,12 +10,12 @@ footer {
         margin: 0 auto;
         a{
             font-size: 3rem;
-            color: $background-color;
+            color: $circle-color;
             transition: all 0.3s ease-in-out;
             display: inline-block;
             padding: 10px;
             &:hover{
-                color: $subtitles-color;
+                color: $main-titles-color;
             }
         }
     }
