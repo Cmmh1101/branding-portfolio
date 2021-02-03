@@ -48,7 +48,7 @@
             margin: 4rem 1rem;
         }
         .box{
-            background: $nav-color;
+            //background: $nav-color;
             display: block;
             transition: all .4s ease-in-out;
             cursor: pointer;
@@ -91,7 +91,7 @@
             grid-column: 1 / 3;
             grid-row: 1 / 2;
             .image {
-                background: url('/img/tequedachi.png');
+                background: url('/public/img/teque-dachi.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -119,7 +119,7 @@
             grid-column: 3 / 4;
             grid-row: 1 / 4;
             .image {
-                background: url('/img/task-manager.png');
+                background: url('../public/img/task-manager.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -147,7 +147,7 @@
             grid-column: 1 / 2;
             grid-row: 2 / 4;
             .image {
-                background: url('/img/virtual-assistance.png');
+                background: url('/public/img/virtual-assistance.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -175,7 +175,7 @@
             grid-column: 2 / 3;
             grid-row: 2 / 4;
             .image {
-                background: url('/img/landing-restaurant.png');
+                background: url('/public/img/landing-restaurant.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -203,7 +203,7 @@
             grid-column: 1 / 3;
             grid-row: 4 / 6;
             .image {
-                background: url('/img/webmaster.png');
+                background: url('/public/img/webmaster.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
@@ -260,7 +260,7 @@
             grid-column: 3 / 4;
             grid-row: 4 / 6;
             .image {
-                background: url('/img/mscanes.png');
+                background: url('/public/img/mscanes.jpg');
                 height: 100%;
                 width: 100%;
                 background-size: cover;
